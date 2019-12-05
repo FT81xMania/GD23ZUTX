@@ -78,6 +78,8 @@ Today test 700x400 pixels, work very well. [Demo file](https://ft81xmania.com/co
 # Adjust the library according to your board and screen
 See wiki. [Information](https://github.com/FT81xMania/GD23ZU/wiki)
 
+* GD23ZUTX has the same configuration considerations as GD23ZU 
+
 # Extra libraries    
 * To calibrate the FT81x screens in STM32Fx we need an external EEPROM. You can download the AT24C32 library from 
  [this link](https://ft81xmania.com/comunidad/Tema-library-eeprom-at24xx)
@@ -88,9 +90,13 @@ See wiki. [Information](https://github.com/FT81xMania/GD23ZU/wiki)
 # Tips
 * These screens have a problem, being the length of the SPI BUS cables. The purpose is to be very short, between 7 and 10 mm. Also a tip is to use on this same SPI BUS some pull-up resistors. [Be a solution of a forum user](https://ft81xmania.com/comunidad/Tema-reset-power-up-issue-with-hotmmcu-ft811cb) by [@raufjay]( https://ft81xmania.com/comunidad/Usuario-raufjay)
 
+* To avoid conflicts between the different versions of the SdFat library, we recommend installing the SdFat beta 2, in the teensyduino library directory. In the case of IDE 1.8.9, the path is: C:\arduino_189\hardware\teensy\avr\libraries
+
 * For teensy 4 you must install a SDIO reader
 
 ![FT81xMania](SDIO_T4.png?raw=true "GD23ZUTX")
+
+
 
 ---
 
