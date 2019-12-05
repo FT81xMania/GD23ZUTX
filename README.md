@@ -14,7 +14,7 @@ Two friends, in Mexico and another in Spain, the water or the puddle does not sc
 Last month of May, a member of the Team, we left. We move on.
 Without any interest, we publish this library altruistically.
 
-# December 4, 2019  Update initial.  Add support for Teensy 4 and SdFat beta 2 labeled as GD23ZUTX
+# December 4, 2019  Update.  Add support for Teensy 4, labeled as GD23ZUTX
 # June 7, 2018      Release initial. Labeled as GD23ZU
 
 1. Library based on [James Bowman](https://github.com/jamesbowman/gd2-lib)
@@ -141,8 +141,8 @@ See wiki on github for [options, hardware and more](https://github.com/FT81xMani
 * Library GD2 by [James Bowman](https://github.com/jamesbowman/gd2-lib)
 
 # Autors
-> [@lightcalamar](https://ft81xmania.com/comunidad/Usuario-lightcalamar) (The MexSpa Team)v
-> [@TFTLCDCyg](https://ft81xmania.com/comunidad/Usuario-tftlcdcyg) and
+> [@lightcalamar](https://ft81xmania.com/comunidad/Usuario-lightcalamar) (The MexSpa Team) and
+> [@TFTLCDCyg](https://ft81xmania.com/comunidad/Usuario-tftlcdcyg)
 
 
 # License
