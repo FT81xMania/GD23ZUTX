@@ -90,6 +90,8 @@ See wiki. [Information](https://github.com/FT81xMania/GD23ZU/wiki)
 
 * For teensy 4 you must install a SDIO reader
 
+![FT81xMania](SDIO_T4.png?raw=true "GD23ZUTX")
+
 ---
 
 # Where to buy FT8xx screens?
