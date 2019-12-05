@@ -57,7 +57,7 @@ void Parametros()
    GD.ColorRGB(0x00ff00); GD.cmd_text((GD.w/2)-40, 3, 20, 0, TXP);
    GD.ColorRGB(0xffff00); GD.cmd_text(3, 3, 20, 0, Board);
 
-   GD.ColorRGB(0x888800); GD.cmd_text(3, (GD.h)-10, 20, OPT_CENTER, "FT81xmania Team");
+   GD.ColorRGB(0x888800); GD.cmd_text(3, (GD.h)-15, 20, 0, "FT81xmania Team");
 
   GD.RestoreContext();
 }
