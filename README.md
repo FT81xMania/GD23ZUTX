@@ -1,12 +1,12 @@
-![FT81xMania](logo.png?raw=true "GD23ZU")
+![FT81xMania](logo.png?raw=true "GD23ZUTX")
 
 
-![FT81xMania](logo2.gif?raw=true "GD23ZU")
+![FT81xMania](logo2.gif?raw=true "GD23ZUTX")
 
 # MexSpa Team contribution for [FT81xMania](https://ft81xmania.com/comunidad/)
 
-# GD23ZU Library
-Library for STM32F1x, STM32F4x, STM32F7x and Teensy 3.5/6 based on library Gameduino 3 Playback videos **.avi** with sound, from a microSD reader **for FTDI; FT810, FT811** and **FT813** screens.
+# GD23ZUTX Library
+Library for Teensy 3.5/6, Teensy 4, STM32F1x, STM32F4x, and STM32F7x; based on Gameduino 3 library. For Teensy 3.6/3.6 or 4, this library can use the resources of the SdFat beta 2 of Greiman in order to manage media files like assets, cells, avi, png, jpeg or jpg files from the SDIO reader. Situable for **for FTDI EVE2 or EVE3 chips like FT810, FT811, FT813 or BT815.
 
 # History
 We are an enthusiastic team of screens based on [FTDI chip](http://www.ftdichip.com/EVE.htm). We like programming and share our advances. We have reached this goal, our only interest is to give the opportunity to operate this library to multiple platforms of MCU's in the market. Wait for you to enjoy the codes, of our, your time.
@@ -14,7 +14,8 @@ Two friends, in Mexico and another in Spain, the water or the puddle does not sc
 Last month of May, a member of the Team, we left. We move on.
 Without any interest, we publish this library altruistically.
 
-# June 7, 2018 Release initial.
+# December 4, 2019  Update initial.  Add support for Teensy 4 and SdFat beta 2 labeled as GD23ZUTX
+# June 7, 2018      Release initial. Labeled as GD23ZU
 
 1. Library based on [James Bowman](https://github.com/jamesbowman/gd2-lib)
 2. Library based on [lightcalamar GD23STM32_F103x](https://github.com/lightcalamar/GD23STM32_F103x) > programmed and modified by [@TFTLCDCyg](https://ft81xmania.com/comunidad/Usuario-tftlcdcyg)
@@ -41,6 +42,7 @@ Library with function special **playback videos** on MCU's ***STM32F103x***, ***
 # Teensy support 
     Models Boards;  (This boards SUPPORT playback video (see Wiki)
 * Teensy 3.5 and Teensy 3.6
+* Teensy 4
 
 # ESP32 support
 It is **not yet possible to play videos**. To be working very hard and we hope to give the big surprise with this MCU.
@@ -53,11 +55,12 @@ Today test 700x400 pixels, work very well. [Demo file](https://ft81xmania.com/co
 
 # Testing resolution videos playback
 1.June 8, 2018 increase in 790 x 470 pixels videos work very fine.
-
 2.June 12, 2018 **maximum resolution of videos is 790 x 470 pixels**.
+3.December 4, 2019 798x479 pixels
 
 # Software requirement
-Donwload and [use the Core STM32GENERIC by danieleff](https://github.com/danieleff/STM32GENERIC)
+* For STM32 boards: Donwload and [use the Core STM32GENERIC by danieleff](https://github.com/danieleff/STM32GENERIC)
+* Arduino IDE 1.8.9 for best results
 
 # Installation
 ## Linux
@@ -80,8 +83,12 @@ See wiki. [Information](https://github.com/FT81xMania/GD23ZU/wiki)
  [this link](https://ft81xmania.com/comunidad/Tema-library-eeprom-at24xx)
 * Library **SdFat** for STM32F be included in core STMGENERIC. This be edited to work in STM32. **DO NOT USE** the official library. It will not work in STM32 architecture. 
 
+* For teensy 3.5, 3.6 or 4 install SdFat beta 2: https://github.com/greiman/SdFat-beta
+
 # Tips
 * These screens have a problem, being the length of the SPI BUS cables. The purpose is to be very short, between 7 and 10 mm. Also a tip is to use on this same SPI BUS some pull-up resistors. [Be a solution of a forum user](https://ft81xmania.com/comunidad/Tema-reset-power-up-issue-with-hotmmcu-ft811cb) by [@raufjay]( https://ft81xmania.com/comunidad/Usuario-raufjay)
+
+* For teensy 4 you must install a SDIO reader
 
 ---
 
