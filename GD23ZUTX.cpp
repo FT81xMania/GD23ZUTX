@@ -35,6 +35,7 @@
  * June 28, 2019 --- Add support for SdFat(1.0.14) for Nucleo F767ZI from Arduino Core STM32 v 1.6.0
  *  Oct 15, 2019 --- Add support for SdFat-Beta V2 of Greiman
  *  Oct 15, 2019 --- Add support for SDIO of T4 and SdFat-Beta V2 of Greiman (under experimentation)
+ *   Dec 5, 2019 --- GD23ZUTX Github release
 
 */
 
