@@ -1,4 +1,4 @@
-#include <GD23ZU.h>
+#include <GD23ZUTX.h>
 
 #include "pez1.h"
 #include "icoX35.h"
@@ -8,7 +8,7 @@ char TX[50];
 
 void setup()
 {
-  GD.begin(GD_STORAGE);
+  GD.begin();
 
   IDEMCU();
 
