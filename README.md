@@ -141,8 +141,9 @@ See wiki on github for [options, hardware and more](https://github.com/FT81xMani
 * Library GD2 by [James Bowman](https://github.com/jamesbowman/gd2-lib)
 
 # Autors
+> [@lightcalamar](https://ft81xmania.com/comunidad/Usuario-lightcalamar) (The MexSpa Team)v
 > [@TFTLCDCyg](https://ft81xmania.com/comunidad/Usuario-tftlcdcyg) and
-> [@lightcalamar](https://ft81xmania.com/comunidad/Usuario-lightcalamar) (The MexSpa Team)
+
 
 # License
 > [LICENSE](https://github.com/lightcalamar/GD23Z/blob/master/LICENSE "LICENSE") by James Bowman
