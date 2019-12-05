@@ -7,11 +7,7 @@ char GrupoFondo[21][15]={"SW0031.jpg","SW0400.jpg","Fondo003.jpeg","zx13.jpg","s
 int IDJPG=0;
 
 void setup(){
-  GD.begin(GD_STORAGE);
-  //GD.cmd_setrotate(1);  
-  //GD.self_calibrate();  
-  
-  //MP();
+  GD.begin();
   Nivel1();
 }
-void loop(){}
+void loop(){}  //Nothing to do here!!!
