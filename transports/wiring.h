@@ -42,14 +42,22 @@ void begin0() {
     digitalWrite(TFT_CS, HIGH);
 
     SPI.begin();
-    //SPI.beginTransaction(SPISettings(36000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 36.0 MHz
-    //SPI.beginTransaction(SPISettings(10500000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 10.5 MHz
-    //SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 5.0 MHz
-    //SPI.beginTransaction(SPISettings(8000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 8.0 MHz
-    //SPI.beginTransaction(SPISettings(18000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 18.0 MHz
-    //SPI.beginTransaction(SPISettings(24000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 24.0 MHz
-//    SPI.beginTransaction(SPISettings(48000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 48.0 MHz
-    SPI.beginTransaction(SPISettings(45000000, MSBFIRST, SPI_MODE0));  //SPI1 ajuste a 42.0 MHz
+
+//test zone
+    //SPI.beginTransaction(SPISettings(36000000, MSBFIRST, SPI_MODE0));  //SPI1  36.0 MHz
+    //SPI.beginTransaction(SPISettings(10500000, MSBFIRST, SPI_MODE0));  //SPI1  10.5 MHz
+    //SPI.beginTransaction(SPISettings(5000000, MSBFIRST, SPI_MODE0));  //SPI1    5.0 MHz
+    //SPI.beginTransaction(SPISettings(8000000, MSBFIRST, SPI_MODE0));  //SPI1    8.0 MHz
+    //SPI.beginTransaction(SPISettings(18000000, MSBFIRST, SPI_MODE0));  //SPI1  18.0 MHz
+    //SPI.beginTransaction(SPISettings(28000000, MSBFIRST, SPI_MODE0));  //SPI1  28.0 MHz
+    //SPI.beginTransaction(SPISettings(48000000, MSBFIRST, SPI_MODE0));  //SPI1  48.0 MHz, unestable
+//test zone
+
+    SPI.beginTransaction(SPISettings(45000000, MSBFIRST, SPI_MODE0));  //SPI1  45.0 MHz, stable
+
+#if (SizeFT813==51)
+    SPI.beginTransaction(SPISettings(SetSPISpeed, MSBFIRST, SPI_MODE0));  //SPI1 to SetSPISpeed, Riverdi TFT
+#endif
 
 
     hostcmd(0x00);
