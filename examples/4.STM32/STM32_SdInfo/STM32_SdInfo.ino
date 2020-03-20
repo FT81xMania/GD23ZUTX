@@ -1,7 +1,7 @@
 /*
  * This program attempts to initialize an SD card and analyze its structure.
  */
-#include <GD23ZU.h>
+#include <GD23ZUTX.h>
 char LoadTime[40], FreeSpace[40];
 uint32_t startJPG=0, endJPG=0, drawT=0;
  
