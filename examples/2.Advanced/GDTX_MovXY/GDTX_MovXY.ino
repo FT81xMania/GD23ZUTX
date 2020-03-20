@@ -1,4 +1,4 @@
-#include <GD23ZU.h>
+#include <GD23ZUTX.h>
 
 char TXP[50];
 #define PNGTAG1 129
