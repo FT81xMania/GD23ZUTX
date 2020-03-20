@@ -1,6 +1,6 @@
 /*
  * This program is a simple binary write/read benchmark.
- */
+*/
 #include "SdFat.h"
 #include "sdios.h"
 #include "FreeStack.h"
