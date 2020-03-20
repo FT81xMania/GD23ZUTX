@@ -1,5 +1,4 @@
 #include <GD23ZUTX.h>
-
 int MCUID;
 
 void setup()
