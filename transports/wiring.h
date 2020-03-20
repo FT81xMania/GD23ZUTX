@@ -5,8 +5,8 @@ private:
 public:
 void begin0() {
 
-
-#if (SizeFT813==35)
+// Test
+//#if (SizeFT813==35)
     //por(); // Funcion ON the POWER ON RESET by @lightcalamar
     pinMode(POR_INT, OUTPUT);
     pinMode(POR_PIN, OUTPUT);       // CONTROL P.O.R. Power On Reset
@@ -20,28 +20,31 @@ void begin0() {
     digitalWrite(POR_INT, HIGH);    
     digitalWrite(POR_PIN, HIGH);    //           |
     delay(100);
-#endif
+//#endif
 
-#if (SizeFT813==52)
+//#if (SizeFT813==52)
     //por(); // Funcion ON the POWER ON RESET by @lightcalamar
-    pinMode(POR_INT, OUTPUT);
-    pinMode(POR_PIN, OUTPUT);       // CONTROL P.O.R. Power On Reset
+//    pinMode(POR_INT, OUTPUT);
+//    pinMode(POR_PIN, OUTPUT);       // CONTROL P.O.R. Power On Reset
 
-    digitalWrite(POR_INT, HIGH);
-    digitalWrite(POR_PIN, HIGH);    // Pantalla FT81x comprada
-    delay(100);                     // en http://HotMCU.com
-    digitalWrite(POR_INT, LOW);
-    digitalWrite(POR_PIN, LOW);     //           |
-    delay(100);                     //           |
-    digitalWrite(POR_INT, HIGH);    
-    digitalWrite(POR_PIN, HIGH);    //           |
-    delay(100);
-#endif
+//    digitalWrite(POR_INT, HIGH);
+//    digitalWrite(POR_PIN, HIGH);    // Pantalla FT81x comprada
+//    delay(100);                     // en http://HotMCU.com
+//    digitalWrite(POR_INT, LOW);
+//    digitalWrite(POR_PIN, LOW);     //           |
+//    delay(100);                     //           |
+//    digitalWrite(POR_INT, HIGH);    
+//    digitalWrite(POR_PIN, HIGH);    //           |
+//    delay(100);
+//#endif
+
+// Test
     //ios();
     pinMode(TFT_CS, OUTPUT);
     digitalWrite(TFT_CS, HIGH);
 
     SPI.begin();
+    SPI.beginTransaction(SPISettings(SetSPISpeed, MSBFIRST, SPI_MODE0));
 
 //test zone
     //SPI.beginTransaction(SPISettings(36000000, MSBFIRST, SPI_MODE0));  //SPI1  36.0 MHz
@@ -51,14 +54,12 @@ void begin0() {
     //SPI.beginTransaction(SPISettings(18000000, MSBFIRST, SPI_MODE0));  //SPI1  18.0 MHz
     //SPI.beginTransaction(SPISettings(28000000, MSBFIRST, SPI_MODE0));  //SPI1  28.0 MHz
     //SPI.beginTransaction(SPISettings(48000000, MSBFIRST, SPI_MODE0));  //SPI1  48.0 MHz, unestable
+
+//#if (SizeFT813==51)
+//    SPI.beginTransaction(SPISettings(SetSPISpeed, MSBFIRST, SPI_MODE0));  //SPI1 to SetSPISpeed, Riverdi TFT
+//#endif
+
 //test zone
-
-    SPI.beginTransaction(SPISettings(45000000, MSBFIRST, SPI_MODE0));  //SPI1  45.0 MHz, stable
-
-#if (SizeFT813==51)
-    SPI.beginTransaction(SPISettings(SetSPISpeed, MSBFIRST, SPI_MODE0));  //SPI1 to SetSPISpeed, Riverdi TFT
-#endif
-
 
     hostcmd(0x00);
 #if 0
@@ -66,7 +67,6 @@ void begin0() {
 #endif
     hostcmd(0x68);
   }
-
 
 
 uint16_t begin1() {
