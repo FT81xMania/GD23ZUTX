@@ -36,7 +36,8 @@ Library with function special **playback videos** on MCU's ***STM32F103x***, ***
 * STM32F103x (All)
 * STM32F407x (BLACK or M4-DEMO)
 * STM32F429x (Discovery board)
-* Nucleo STM32F767x
+* Nucleo F767ZI
+* Nucleo H743ZI
 * Consult the documentation different boards to pins SPI1 and SPI2 [Follow this board's Wiki](https://github.com/lightcalamar/GD23Z/wiki/STM32Fx-configuration) 
     
 # Teensy support 
