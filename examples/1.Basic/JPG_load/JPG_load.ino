@@ -10,7 +10,7 @@ void setup()
 
   startJPG = millis();
    GD.cmd_loadimage(0, 0);
-   GD.load("Ab1.jpg");
+   GD.load("tree.jpg");
   endJPG = millis();
   
   drawT=endJPG-startJPG;
