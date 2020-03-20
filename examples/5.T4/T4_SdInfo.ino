@@ -1,7 +1,6 @@
 /*
  * This program attempts to initialize an SD card and analyze its structure.
  */
-
 #include <GD23ZUTX.h>
 char LoadTime[40], Interface[40];
 uint32_t startJPG=0, endJPG=0, drawT=0;
@@ -10,7 +9,6 @@ uint32_t startJPG=0, endJPG=0, drawT=0;
 #include "sdios.h"
 
 int Test=1;
-
 /*
   Set DISABLE_CS_PIN to disable a second SPI device.
   For example, with the Ethernet shield, set DISABLE_CS_PIN
